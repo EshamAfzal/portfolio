@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A sleek, modern portfolio website">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>Your Name
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h3>Web Developer</h3>
+                <h1>Hi, I'm <span>YOUR NAME</span><br>From Pakistan</h1>
+                <div class="about-col-1">
+                    <img src="1.webp" alt="Profile Image">
+                </div>
+            </div>
+        </div>
+    </div>
+     
+    <div id="about">
+        <div class="container">
+          <h1>About Me</h1>
+          <p>"Hello! I'm [Your Name], a passionate web developer dedicated to building modern, responsive, and user-friendly websites. With expertise in both front-end and back-end development, I bring creative ideas to life through clean, efficient code. I love crafting seamless user experiences and visually appealing designs that work flawlessly across all devices. Staying updated with the latest web technologies and trends, I strive to create websites that not only meet but exceed client expectations."</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br>Web App Development</li>
+                <li><span>App Development</span><br>Building Android/iOS Apps</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+                <li><span>2024 - current</span><br>"fill by the user"</li>
+                <li><span>2022 - 2023</span><br>"fill by the user"</li>
+                <li><span>2020 - 2019</span><br>"fill by the user"</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+                <li><span>Matric - Intermediate</span><br>"fill by the user"</li>
+                <li><span>Bachelor's in</span><br>"fill by the user"</li>
+                <li><span>Masters in</span><br>"fill by the user"</li>
+            </ul>
+          </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <box-icon name='code-alt' ></box-icon>
+                    <h2>Web Design</h2>
+                    <p>Crafting user-centered designs that merge creativity with functionality.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <box-icon name='crop' ></box-icon>
+                    <h2>UI/UX Designer</h2>
+                    <p>Designing seamless and intuitive experiences that connect users and technology.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <box-icon name='mobile'></box-icon>
+                    <h2>Mobile App Designer</h2>
+                    <p>Creating engaging, user-friendly apps that fit in the palm of your hand.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work1(2).jpg">
+                    <div class="layer">
+                        <h3>Web Page </h3>
+                         <p>A clean and modern web page that highlights skills, creativity, and professional work in web design and development.  </p>
+                         <a href="#"><box-icon name='link-external'></box-icon></a>
+                        </div>
+                </div>
+                <div class="work">
+                    <img src="work2.jpg">
+                    <div class="layer">
+                        <h3>Designing the Page </h3>
+                         <p>A user-friendly and visually appealing page designed to create seamless and engaging experiences.  </p>
+                         <a href="#"><box-icon name='link-external'></box-icon></a>
+                        </div>
+                </div>
+                <div class="work">
+                    <img src="work3.jpg">
+                    <div class="layer">
+                        <h3>Mobile App</h3>
+                        <p>A dynamic and interactive mobile app designed to connect people and spark meaningful conversations</p>
+                        <a href="#"><box-icon name='link-external'></box-icon></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><box-icon type="solid" name="paper-plane" color="#ff004f" size="md"></box-icon> Contact@example.com</p>
+                    <p><box-icon type="solid" name="phone" color="#ff004f" size="md"></box-icon> 012345678</p>
+                    <div class="social-icons">
+                        <a href="#"><box-icon type="logo" name="facebook-circle" color="#ababab" size="lg"></box-icon></a>
+                        <a href="#"><box-icon type="logo" name="twitter" color="#ababab" size="lg"></box-icon></a>
+                        <a href="#"><box-icon type="logo" name="linkedin-square" color="#ababab" size="lg"></box-icon></a>
+                    </div>
+                    <a href="/cv.pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
